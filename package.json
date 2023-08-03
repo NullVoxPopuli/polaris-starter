@@ -11,7 +11,7 @@
     "test": "tests"
   },
   "scripts": {
-    "build:production": "ember build --environment=production",
+    "build:production": "pnpm prebuild:prod && vite --build",
     "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\"",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:css:fix": "concurrently \"npm:lint:css -- --fix\"",
@@ -22,7 +22,11 @@
     "lint:js:fix": "eslint . --fix",
     "lint:prettier": "prettier . --check",
     "lint:prettier:fix": "prettier . --write",
-    "start": "ember serve",
+    "prebuild:dev": "ember build --environment=development",
+    "prebuild:prod": "ember build --environment=production",
+    "start": "pnpm prebuild:dev && concurrently \"npm:start:*\" --names 'start:'",
+    "start:prebuild": "ember build --watch",
+    "start:dev": "vite",
     "test": "concurrently \"npm:lint\" \"npm:test:*\" --names \"lint,test:\"",
     "test:ember": "ember test"
   },
@@ -35,7 +39,7 @@
     "@ember/test-helpers": "^3.2.0",
     "@embroider/compat": "3.2.1",
     "@embroider/core": "3.2.1",
-    "@embroider/webpack": "3.1.5",
+    "@embroider/vite": "^0.1.2",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
     "@glint/core": "^1.0.2",
@@ -43,6 +47,7 @@
     "@glint/environment-ember-template-imports": "^1.0.2",
     "@glint/template": "^1.0.2",
     "@nullvoxpopuli/eslint-configs": "^3.2.0",
+    "@rollup/plugin-babel": "^6.0.3",
     "@tsconfig/ember": "^3.0.0",
     "@types/qunit": "^2.19.6",
     "@types/rsvp": "^4.0.4",
@@ -82,7 +87,7 @@
     "stylelint-prettier": "^3.0.0",
     "tracked-built-ins": "^3.1.1",
     "typescript": "^5.1.6",
-    "webpack": "^5.88.2"
+    "vite": "^4.4.8"
   },
   "packageManager": "pnpm@7.1.7",
   "pnpm": {
