@@ -1,18 +1,30 @@
 import { Clock } from './clock';
 import { Excite } from './excite';
 
-import type { TOC } from '@ember/component/template-only';
-
-const Welcome: TOC<{ Args: {}, Blocks: {} }> = <template>
-  <header>
-    <img src='/images/logo.png' width='50' height='50' alt='an unofficial polaris logo. a gold compass rose sits in a space setting with kaleidoscopic colors showing through the compass.' />
-    <h1>Welcome to Polaris</h1>
-  </header>
+const Welcome = <template>
+  <Header />
   <main>
     <div class='title'>
       <h2>Learning Resources</h2>
       <aside>The time is <span>{{Clock}}</span></aside>
     </div>
+
+    <Links />
+
+    <Footer />
+  </main>
+</template>;
+
+export default Welcome;
+
+const Header = <template>
+  <header>
+    <img src='/images/logo.png' width='50' height='50' alt='an unofficial polaris logo. a gold compass rose sits in a space setting with kaleidoscopic colors showing through the compass.' />
+    <h1>Welcome to Polaris</h1>
+  </header>
+</template>;
+
+const Links = <template>
     <ul>
       <li>
         <a href="https://tutorial.glimdown.com">Tutorial</a>
@@ -51,13 +63,14 @@ const Welcome: TOC<{ Args: {}, Blocks: {} }> = <template>
         <span>Join the community Discord</span>
       </li>
     </ul>
-
-    <div class='footer'>
-      <a href="https://github.com/NullVoxPopuli/polaris-starter/tree/main" class='github'>Fork Starter Project on GitHub</a>
-    </div>
-
-      <Excite />
-  </main>
 </template>;
 
-export default Welcome;
+const Footer = <template>
+  <div class='footer'>
+    <a href="https://github.com/NullVoxPopuli/polaris-starter/tree/main" class='github'>Fork Starter Project on GitHub</a>
+  </div>
+
+  <Excite />
+</template>;
+
+

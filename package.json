@@ -24,8 +24,8 @@
     "lint:prettier:fix": "prettier . --write",
     "prebuild:dev": "ember build --environment=development",
     "prebuild:prod": "ember build --environment=production",
-    "start": "pnpm prebuild:dev && concurrently \"npm:start:*\" --names 'start:'",
-    "start:prebuild": "ember build --watch",
+    "start": "pnpm prebuild:dev && concurrently \"npm:start:*\"",
+    "start:compat": "ember build --watch",
     "start:dev": "vite",
     "test": "concurrently \"npm:lint\" \"npm:test:*\" --names \"lint,test:\"",
     "test:ember": "ember test"
