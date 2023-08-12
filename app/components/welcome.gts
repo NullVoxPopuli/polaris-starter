@@ -1,8 +1,9 @@
 import { Clock } from './clock';
 import { Excite } from './excite';
 
+import type { TOC } from '@ember/component/template-only';
 
-const Welcome = <template>
+const Welcome: TOC<{ Args: {}, Blocks: {} }> = <template>
   <header>
     <img src='/images/logo.png' width='50' height='50' alt='an unofficial polaris logo. a gold compass rose sits in a space setting with kaleidoscopic colors showing through the compass.' />
     <h1>Welcome to Polaris</h1>
@@ -57,6 +58,6 @@ const Welcome = <template>
 
       <Excite />
   </main>
-</template>
+</template>;
 
 export default Welcome;

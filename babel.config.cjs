@@ -1,7 +1,7 @@
 let config = require("./node_modules/.embroider/rewritten-app/_babel_config_");
 
 let macrosPlugin = config.plugins.find(
-  (p) => Array.isArray(p) && p[0].endsWith("macros-babel-plugin.js")
+  (p) => Array.isArray(p) && p[0].endsWith("macros-babel-plugin.js"),
 );
 
 if (macrosPlugin?.[1].importSyncImplementation !== "cjs") {
