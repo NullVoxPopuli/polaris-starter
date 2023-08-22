@@ -68,7 +68,7 @@ const Links = <template>
 const Footer = <template>
   <div class='footer'>
     <a href="https://github.com/NullVoxPopuli/polaris-starter/tree/main" class='github'>
-      <img src="/images/github-logo.png" alt="GitHub Logo" />
+      <img alt="" src="/images/github-logo.png" />
       Fork Starter Project on GitHub
     </a>
   </div>

@@ -121,6 +121,7 @@ a.github {
   grid-auto-flow: column;
   gap: 0.5rem;
 }
+
 a.github img {
   mix-blend-mode: difference;
   max-height: 1.2rem;
