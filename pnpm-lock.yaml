@@ -99,8 +99,8 @@ devDependencies:
     specifier: ^2.6.3
     version: 2.6.3(@glint/template@1.1.0)(webpack@5.88.2)
   ember-cli:
-    specifier: ~5.1.0
-    version: 5.1.0
+    specifier: ~5.2.0
+    version: 5.2.0
   ember-cli-babel:
     specifier: ^8.0.0
     version: 8.0.0(@babel/core@7.22.10)
@@ -2465,7 +2465,7 @@ packages:
   /@types/cors@2.8.13:
     resolution: {integrity: sha512-RG8AStHlUiV5ysZQKq97copd2UmVYw3/pRMLefISZ3S1hK104Cwm7iLQ3fTKx+lsUH2CE8FlLaYeEA2LSeqYUA==}
     dependencies:
-      '@types/node': 20.5.2
+      '@types/node': 20.5.3
     dev: true
 
   /@types/eslint-scope@3.7.4:
@@ -2509,14 +2509,14 @@ packages:
   /@types/fs-extra@8.1.2:
     resolution: {integrity: sha512-SvSrYXfWSc7R4eqnOzbQF4TZmfpNSM9FrSWLU3EUnWBuyZqNBOrv1B1JA3byUDPUl9z4Ab3jeZG2eDdySlgNMg==}
     dependencies:
-      '@types/node': 20.5.2
+      '@types/node': 20.5.3
     dev: true
 
   /@types/glob@7.2.0:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.5.2
+      '@types/node': 20.5.3
     dev: true
 
   /@types/glob@8.1.0:
@@ -2556,6 +2556,9 @@ packages:
 
   /@types/node@20.5.2:
     resolution: {integrity: sha512-5j/lXt7unfPOUlrKC34HIaedONleyLtwkKggiD/0uuMfT8gg2EOpg0dz4lCD15Ga7muC+1WzJZAjIB9simWd6Q==}
+
+  /@types/node@20.5.3:
+    resolution: {integrity: sha512-ITI7rbWczR8a/S6qjAW7DMqxqFMjjTo61qZVWJ1ubPvbIQsL5D/TvwjYEalM8Kthpe3hTzOGrF2TGbAu2uyqeA==}
 
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -5349,8 +5352,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /ember-cli@5.1.0:
-    resolution: {integrity: sha512-TlnfO+V5lZqRQ7eGXt+P8q24Cu90GSXXAS/2NasaCtC1WY7eVzhfMsoNZiOw3Pe1CaB7i5fPDR8jAMsTwx8Tpg==}
+  /ember-cli@5.2.0:
+    resolution: {integrity: sha512-VZ/yhnM9tNWxZQQ+3dGe0MkUhkcS51W7WQWxlIr+NxlqG+WLe6qi8IKHElXwI3nY/Gbh5kSU5rF31WmGeGXjbg==}
     engines: {node: '>= 16'}
     hasBin: true
     dependencies:
@@ -5801,7 +5804,7 @@ packages:
     dependencies:
       '@types/cookie': 0.4.1
       '@types/cors': 2.8.13
-      '@types/node': 20.5.2
+      '@types/node': 20.5.3
       accepts: 1.3.8
       base64id: 2.0.0
       cookie: 0.4.2
@@ -8047,7 +8050,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.5.2
+      '@types/node': 20.5.3
       merge-stream: 2.0.0
       supports-color: 8.1.1
 

@@ -11,7 +11,7 @@
     "test": "tests"
   },
   "scripts": {
-    "build:production": "pnpm prebuild:prod && vite --build",
+    "build:production": "pnpm prebuild:prod && vite build",
     "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\"",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:css:fix": "concurrently \"npm:lint:css -- --fix\"",
@@ -56,7 +56,7 @@
     "broccoli-asset-rev": "^3.0.0",
     "concurrently": "^8.2.1",
     "ember-auto-import": "^2.6.3",
-    "ember-cli": "~5.1.0",
+    "ember-cli": "~5.2.0",
     "ember-cli-babel": "^8.0.0",
     "ember-cli-clean-css": "^2.0.0",
     "ember-cli-htmlbars": "^6.3.0",
