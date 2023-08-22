@@ -93,12 +93,14 @@
   "packageManager": "pnpm@7.1.7",
   "pnpm": {
     "overrides": {
-      "@types/eslint": "7.29.0"
-    },
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "@babel/core"
-      ]
+      "@glimmer/component": "^1.1.2",
+      "@glimmer/tracking": "^1.1.2",
+      "@glimmer/compiler": "^0.84.3",
+      "@glimmer/syntax": "^0.84.3",
+      "@glimmer/validator": "^0.84.3",
+      "@glimmer/reference": "^0.84.3",
+      "@glimmer/manager": "^0.84.3",
+      "@glimmer/interfaces": "^0.84.3"
     }
   },
   "engines": {
@@ -114,6 +116,6 @@
   },
   "volta": {
     "node": "18.17.0",
-    "pnpm": "8.6.10"
+    "pnpm": "8.6.12"
   }
 }
