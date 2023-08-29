@@ -11,8 +11,6 @@
     "test": "tests"
   },
   "scripts": {
-    "build:ember": "ember b",
-    "build": "vite build",
     "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\"",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:css:fix": "concurrently \"npm:lint:css -- --fix\"",
@@ -25,11 +23,13 @@
     "lint:prettier:fix": "prettier . --write",
     "lint:types": "glint",
     "start": "pnpm build:ember && concurrently 'npm:start:prebuild' 'npm:start:dev'",
-    "start:prebuild": "ember build --watch",
     "start:dev": "vite",
-    "start:test": "vite --open /tests/",
     "test": "pnpm test:ember",
-    "test:ember": "pnpm build:ember && node ./scripts/run-tests.mjs"
+    "test:ember": "pnpm build:ember && node ./scripts/run-tests.mjs",
+    "start:test": "vite --open /tests/",
+    "start:prebuild": "ember build --watch",
+    "build:ember": "ember b",
+    "build": "vite build"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
@@ -80,7 +80,6 @@
     "loader.js": "^4.7.0",
     "prettier": "^3.2.4",
     "prettier-plugin-ember-template-tag": "^2.0.0",
-    "puppeteer-chromium-resolver": "^21.0.0",
     "qunit": "^2.20.0",
     "qunit-dom": "^3.0.0",
     "stylelint": "^16.1.0",
@@ -88,13 +87,14 @@
     "stylelint-prettier": "^5.0.0",
     "tracked-built-ins": "^3.1.1",
     "typescript": "^5.3.3",
-    "vite": "^5.0.11"
+    "vite": "^5.0.11",
+    "puppeteer-chromium-resolver": "^21.0.0"
   },
   "packageManager": "pnpm@8.9.0",
   "pnpm": {
     "overrides": {
-      "@glimmer/manager": ">= 0.84.3",
-      "@glimmer/validator": ">= 0.84.3"
+      "@glimmer/validator": ">= 0.84.3",
+      "@glimmer/manager": ">= 0.84.3"
     }
   },
   "engines": {
@@ -104,11 +104,11 @@
     "edition": "octane"
   },
   "dependencies": {
-    "@embroider/macros": "1.13.5-unstable.7357b5a",
     "ember-modifier": "^4.1.0",
     "ember-resources": "^7.0.0",
+    "tracked-built-ins": "^3.3.0",
     "ember-route-template": "^1.0.3",
-    "tracked-built-ins": "^3.3.0"
+    "@embroider/macros": "1.13.5-unstable.7357b5a"
   },
   "volta": {
     "node": "18.17.0",
