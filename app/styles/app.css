@@ -1,5 +1,9 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   --page-bg: rgb(235 235 235);
   --page-font: rgb(40 35 35);
@@ -49,84 +53,4 @@ main {
 
 a {
   text-decoration: none;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-header h1 {
-  margin-left: 1rem;
-}
-
-header img {
-  margin-left: 0;
-  border-radius: 1rem;
-  border: 1px solid var(--logo-border);
-}
-
-.title {
-  display: flex;
-  align-items: center;
-}
-
-.title h2 {
-  flex: 1;
-}
-
-.title aside {
-  color: var(--time-font);
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-}
-
-ul {
-  margin-bottom: 50px;
-  padding: 0;
-}
-
-li {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-}
-
-li a {
-  color: var(--link-font);
-  grid-area: link;
-}
-
-li a:hover {
-  color: var(--link-hover);
-}
-
-li span {
-  grid-area: text;
-}
-
-a.github {
-  align-items: center;
-  color: var(--github-font);
-  background: var(--github-bg);
-  padding: 0.75rem 1rem;
-  border-radius: 0.25rem;
-  border: 1px solid var(--github-border);
-  padding-right: 1rem;
-  display: grid;
-  grid-auto-flow: column;
-  gap: 0.5rem;
-}
-
-a.github img {
-  mix-blend-mode: difference;
-  max-height: 1.2rem;
-}
-
-a.github:hover {
-  background: var(--github-hover);
 }
