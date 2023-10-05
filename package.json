@@ -28,8 +28,8 @@
     "start": "pnpm prebuild:dev && concurrently \"npm:start:*\"",
     "start:compat": "ember build --watch",
     "start:dev": "vite",
-    "test": "concurrently \"npm:lint\" \"npm:test:*\" --names \"lint,test:\"",
-    "test:ember": "ember test"
+    "test": "pnpm prebuild:dev && vite build && pnpm test:ember",
+    "test:ember": "ember test --path ./dist/"
   },
   "devDependencies": {
     "@babel/core": "^7.23.0",
