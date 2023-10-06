@@ -46,6 +46,7 @@ You will need the following things properly installed on your computer.
 
 - `pnpm start`
 - Visit your app at [http://localhost:4200](http://localhost:4200).
+- Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
 ### Code Generators
 
