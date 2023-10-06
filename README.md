@@ -45,7 +45,7 @@ You will need the following things properly installed on your computer.
 ## Running / Development
 
 - `pnpm start`
-- Visit your app at [http://localhost:5173](http://localhost:5173).
+- Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ### Code Generators
 
