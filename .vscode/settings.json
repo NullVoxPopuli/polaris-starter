@@ -1,0 +1,18 @@
+{
+  "eslint.probe": [
+    "javascript",
+    "typescript",
+    "html",
+    "markdown",
+    "glimmer-js",
+    "glimmer-ts"
+  ],
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "html",
+    "markdown",
+    "glimmer-js",
+    "glimmer-ts"
+  ]
+}

@@ -1,5 +1,6 @@
 {
   "recommendations": [
-    "embertooling.emberjs"
+    "embertooling.emberjs",
+    "typed-ember.glint-vscode"
   ]
 }
