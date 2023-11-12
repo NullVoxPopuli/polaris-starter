@@ -17,8 +17,6 @@ module.exports = function (defaults) {
     staticHelpers: true,
     staticModifiers: true,
     staticComponents: true,
-    splitControllers: true,
-    splitRouteClasses: true,
     staticEmberSource: true,
     amdCompatibility: {
       es: [],
