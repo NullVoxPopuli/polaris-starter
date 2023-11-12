@@ -23,9 +23,7 @@ export default defineConfig({
       extensions: [".gjs", ".js", ".hbs", ".ts", ".gts"],
     }),
   ],
-  optimizeDeps: {
-    exclude: addons(__dirname),
-  },
+  optimizeDeps: { exclude: addons(__dirname) },
   server: {
     watch: {
       ignored: ["!**/node_modules/.embroider/rewritten-app/**"],
