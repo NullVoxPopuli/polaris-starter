@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import { resolver, hbs, scripts, templateTag, addons, optimizeDeps } from "@embroider/vite";
+import { resolver, hbs, scripts, templateTag, addons } from "@embroider/vite";
 import { resolve } from "path";
 import { babel } from "@rollup/plugin-babel";
 
@@ -23,7 +23,7 @@ export default defineConfig({
       extensions: [".gjs", ".js", ".hbs", ".ts", ".gts"],
     }),
   ],
-  optimizeDeps: optimizeDeps(),
+  optimizeDeps: { exclude: addons(__dirname) },
   server: {
     watch: {
       ignored: ["!**/node_modules/.embroider/rewritten-app/**"],
