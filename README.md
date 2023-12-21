@@ -2,8 +2,10 @@
 
 Variants:
 
-- [Vite](https://github.com/NullVoxPopuli/polaris-starter/tree/main) 👈 This branch (note, vite is early alpha right now)
-- [Webpack](https://github.com/NullVoxPopuli/polaris-starter/tree/webpack)
+- [Vite, TS](https://github.com/NullVoxPopuli/polaris-starter/tree/main) 👈 This branch (note, vite is early alpha right now)
+- [Vite, JS](https://github.com/NullVoxPopuli/polaris-starter/tree/vite-javascript)
+- [Webpack, TS](https://github.com/NullVoxPopuli/polaris-starter/tree/webpack)
+- [Webpack, JS](https://github.com/NullVoxPopuli/polaris-starter/tree/webpack-javascript)
 
 # polaris-starter
 
