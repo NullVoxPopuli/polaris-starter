@@ -24,6 +24,7 @@
     "lint:prettier": "prettier . --check",
     "lint:prettier:fix": "prettier . --write",
     "lint:types": "glint",
+    "start": "concurrently 'npm:start:prebuild' 'npm:start:dev'",
     "start:prebuild": "ember build --watch",
     "start:dev": "vite",
     "start:test": "vite --open /tests/",
