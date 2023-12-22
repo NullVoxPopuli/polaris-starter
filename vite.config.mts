@@ -12,8 +12,9 @@ import { babel } from "@rollup/plugin-babel";
 const root = "node_modules/.embroider/rewritten-app";
 
 export default defineConfig({
-   // esbuild in vite does not support decorators
-  esbuild: false, root,
+  // esbuild in vite does not support decorators
+  esbuild: false,
+  root,
   plugins: [
     hbs(),
     templateTag(),

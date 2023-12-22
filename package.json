@@ -47,7 +47,6 @@
     "@glint/environment-ember-loose": "^1.2.1",
     "@glint/environment-ember-template-imports": "^1.2.1",
     "@glint/template": "^1.2.1",
-    "@nullvoxpopuli/eslint-configs": "^3.2.2",
     "@rollup/plugin-babel": "^6.0.4",
     "@tsconfig/ember": "^3.0.2",
     "@types/qunit": "^2.19.9",
@@ -74,13 +73,13 @@
     "ember-truth-helpers": "^4.0.3",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-ember": "^11.12.0",
+    "eslint-plugin-ember": "^12.0.0-alpha.4",
     "eslint-plugin-n": "^16.5.0",
     "eslint-plugin-prettier": "^5.1.1",
     "eslint-plugin-qunit": "^8.0.0",
     "loader.js": "^4.7.0",
     "prettier": "^3.1.1",
-    "prettier-plugin-ember-template-tag": "^1.1.0",
+    "prettier-plugin-ember-template-tag": "^2.0.0-0",
     "puppeteer-chromium-resolver": "^21.0.0",
     "qunit": "^2.20.0",
     "qunit-dom": "^3.0.0",
@@ -92,7 +91,12 @@
     "vite": "^5.0.10"
   },
   "packageManager": "pnpm@8.9.0",
-  "pnpm": {},
+  "pnpm": {
+    "overrides": {
+      "@glimmer/manager": ">= 0.84.3",
+      "@glimmer/validator": ">= 0.84.3"
+    }
+  },
   "engines": {
     "node": ">= 18"
   },
