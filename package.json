@@ -37,9 +37,9 @@
     "@ember/optional-features": "^2.0.0",
     "@ember/string": "^3.1.1",
     "@ember/test-helpers": "^3.2.1",
-    "@embroider/compat": "3.4.2-unstable.241f631",
-    "@embroider/core": "3.4.4-unstable.241f631",
-    "@embroider/vite": "0.2.1-unstable.241f631",
+    "@embroider/compat": "3.4.2-unstable.7357b5a",
+    "@embroider/core": "3.4.4-unstable.7357b5a",
+    "@embroider/vite": "0.2.1-unstable.7357b5a",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
     "@glint/core": "^1.2.1",
@@ -99,7 +99,7 @@
     "edition": "octane"
   },
   "dependencies": {
-    "@embroider/macros": "1.13.5-unstable.241f631",
+    "@embroider/macros": "1.13.5-unstable.7357b5a",
     "ember-modifier": "^4.1.0",
     "ember-resources": "^6.4.2",
     "ember-route-template": "^1.0.3",
