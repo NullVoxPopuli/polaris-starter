@@ -29,7 +29,7 @@
     "start:dev": "vite",
     "start:test": "vite --open /tests/",
     "test": "pnpm test:ember",
-    "test:ember": "node ./scripts/run-tests.mjs"
+    "test:ember": "pnpm build:ember && node ./scripts/run-tests.mjs"
   },
   "devDependencies": {
     "@babel/core": "^7.23.6",
