@@ -1,11 +1,19 @@
 import { defineConfig } from "vite";
-import { resolver, hbs, scripts, templateTag, addons } from "@embroider/vite";
+import {
+  resolver,
+  hbs,
+  scripts,
+  templateTag,
+  optimizeDeps,
+} from "@embroider/vite";
 import { resolve } from "path";
 import { babel } from "@rollup/plugin-babel";
 
 const root = "node_modules/.embroider/rewritten-app";
 
 export default defineConfig({
+  // esbuild in vite does not support decorators
+  esbuild: false,
   root,
   plugins: [
     hbs(),
@@ -23,8 +31,9 @@ export default defineConfig({
       extensions: [".gjs", ".js", ".hbs", ".ts", ".gts"],
     }),
   ],
-  optimizeDeps: { exclude: addons(__dirname) },
+  optimizeDeps: optimizeDeps(),
   server: {
+    port: 4200,
     watch: {
       ignored: ["!**/node_modules/.embroider/rewritten-app/**"],
     },

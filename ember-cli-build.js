@@ -17,15 +17,9 @@ module.exports = function (defaults) {
     staticHelpers: true,
     staticModifiers: true,
     staticComponents: true,
-    splitControllers: true,
-    splitRouteClasses: true,
     staticEmberSource: true,
     amdCompatibility: {
       es: [],
     },
-    // splitAtRoutes: ['route.name'], // can also be a RegExp
-    // packagerOptions: {
-    //    webpackConfig: { }
-    // }
   });
 };
