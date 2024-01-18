@@ -6,10 +6,10 @@ import Welcome from '../components/welcome';
 
 export default Route(
   <template>
-    {{pageTitle 'PolarisStarter'}}
+    {{pageTitle "PolarisStarter"}}
 
     <Welcome />
 
     {{outlet}}
-  </template>,
+  </template>
 );

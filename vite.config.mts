@@ -1,11 +1,5 @@
 import { defineConfig } from "vite";
-import {
-  resolver,
-  hbs,
-  scripts,
-  templateTag,
-  optimizeDeps,
-} from "@embroider/vite";
+import { resolver, hbs, scripts, templateTag, optimizeDeps } from "@embroider/vite";
 import { resolve } from "path";
 import { babel } from "@rollup/plugin-babel";
 

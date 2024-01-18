@@ -10,14 +10,14 @@ const intensify = modifier((element) => {
     {
       duration: 100,
       iterations: Infinity,
-    },
+    }
   );
 
   return () => animation.cancel();
 });
 
 export const Excite = <template>
-  <div {{intensify}} style='position: fixed; bottom: 1rem; left: 1rem;'>
+  <div {{intensify}} style="position: fixed; bottom: 1rem; left: 1rem;">
     🥳
   </div>
 </template>;
