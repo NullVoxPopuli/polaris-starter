@@ -107,7 +107,7 @@
     "ember-resources": "^7.0.0",
     "tracked-built-ins": "^3.3.0",
     "ember-route-template": "^1.0.3",
-    "@embroider/macros": "1.13.5-unstable.7357b5a"
+    "@embroider/macros": "1.13.5-unstable.289f83d"
   },
   "volta": {
     "node": "18.17.0",
