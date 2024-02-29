@@ -87,6 +87,12 @@
     "vite": "^5.0.11"
   },
   "packageManager": "pnpm@8.9.0",
+  "pnpm": {
+    "overrides": {
+      "@glimmer/manager": ">= 0.84.3",
+      "@glimmer/validator": ">= 0.84.3"
+    }
+  },
   "engines": {
     "node": ">= 18"
   },
