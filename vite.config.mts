@@ -1,19 +1,21 @@
 import { defineConfig } from "vite";
-import { resolver, hbs, scripts, templateTag, optimizeDeps } from "@embroider/vite";
+import { resolver, hbs, scripts, templateTag, optimizeDeps, compatPrebuild } from "@embroider/vite";
 import { resolve } from "path";
 import { babel } from "@rollup/plugin-babel";
 
 const root = "node_modules/.embroider/rewritten-app";
 
 export default defineConfig({
+  root,
   // esbuild in vite does not support decorators
   esbuild: false,
-  root,
+  cacheDir: resolve("node_modules", ".vite"),
   plugins: [
     hbs(),
     templateTag(),
     scripts(),
     resolver(),
+    compatPrebuild(),
 
     babel({
       babelHelpers: "runtime",
@@ -33,6 +35,7 @@ export default defineConfig({
     },
   },
   build: {
+    outDir: resolve(process.cwd(), "dist"),
     rollupOptions: {
       input: {
         main: resolve(root, "index.html"),

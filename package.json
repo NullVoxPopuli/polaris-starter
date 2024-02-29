@@ -11,7 +11,6 @@
     "test": "tests"
   },
   "scripts": {
-    "build:ember": "ember b",
     "build": "vite build",
     "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\"",
     "lint:css": "stylelint \"**/*.css\"",
@@ -24,12 +23,9 @@
     "lint:prettier": "prettier . --check",
     "lint:prettier:fix": "prettier . --write",
     "lint:types": "glint",
-    "start": "pnpm build:ember && concurrently 'npm:start:prebuild' 'npm:start:dev'",
-    "start:prebuild": "ember build --watch",
-    "start:dev": "vite",
-    "start:test": "vite --open /tests/",
+    "start": "vite",
     "test": "pnpm test:ember",
-    "test:ember": "pnpm build:ember && node ./scripts/run-tests.mjs"
+    "test:ember": "node ./scripts/run-tests.mjs"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
@@ -38,9 +34,9 @@
     "@ember/optional-features": "^2.0.0",
     "@ember/string": "^3.1.1",
     "@ember/test-helpers": "^3.2.1",
-    "@embroider/compat": "3.4.2-unstable.289f83d",
-    "@embroider/core": "3.4.4-unstable.289f83d",
-    "@embroider/vite": "0.2.1-unstable.289f83d",
+    "@embroider/compat": "3.4.6-unstable.a90d03d",
+    "@embroider/core": "3.4.6-unstable.a90d03d",
+    "@embroider/vite": "0.2.1-unstable.a90d03d",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
     "@glint/core": "^1.2.1",
@@ -104,7 +100,7 @@
     "edition": "octane"
   },
   "dependencies": {
-    "@embroider/macros": "1.13.5-unstable.7357b5a",
+    "@embroider/macros": "1.14.1-unstable.a90d03d",
     "ember-modifier": "^4.1.0",
     "ember-resources": "^7.0.0",
     "ember-route-template": "^1.0.3",

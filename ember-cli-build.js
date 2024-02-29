@@ -1,6 +1,7 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const { prebuild } = require('@embroider/compat');
 
 module.exports = function (defaults) {
   const app = new EmberApp(defaults, {
@@ -10,16 +11,5 @@ module.exports = function (defaults) {
     },
   });
 
-  return require('@embroider/compat').compatBuild(app, undefined, {
-    extraPublicTrees: [],
-    staticAddonTrees: true,
-    staticAddonTestSupportTrees: true,
-    staticHelpers: true,
-    staticModifiers: true,
-    staticComponents: true,
-    staticEmberSource: true,
-    amdCompatibility: {
-      es: [],
-    },
-  });
+  return prebuild(app);
 };
