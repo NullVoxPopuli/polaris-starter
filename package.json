@@ -115,7 +115,7 @@
     "edition": "octane"
   },
   "dependencies": {
-    "@embroider/macros": "1.15.0",
+    "@embroider/macros": "1.14.1-unstable.f30e685",
     "ember-modifier": "^4.1.0",
     "ember-resources": "^7.0.0",
     "ember-route-template": "^1.0.3",
