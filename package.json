@@ -24,6 +24,7 @@
     "lint:prettier:fix": "prettier . --write",
     "lint:types": "glint",
     "start": "vite",
+    "start:test": "vite --open /tests/",
     "test": "pnpm test:ember",
     "test:ember": "node ./scripts/run-tests.mjs"
   },
