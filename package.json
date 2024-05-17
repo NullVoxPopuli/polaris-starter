@@ -85,21 +85,9 @@
     "typescript": "^5.4.5",
     "webpack": "^5.91.0"
   },
-  "packageManager": "pnpm@8.9.0",
-  "pnpm": {
-    "overrides": {
-      "@glint/template": "^1.2.1",
-      "@glint/environment-ember-template-imports": "^1.2.1",
-      "@glint/environment-ember-loose": "1.2.1",
-      "@glint/core": "1.2.1",
-      "@glimmer/validator": "0.84.3",
-      "@glimmer/tracking": "^1.1.2",
-      "@glimmer/manager": "0.84.3",
-      "@glimmer/component": "^1.1.2"
-    }
-  },
+  "packageManager": "pnpm@9.1.1",
   "engines": {
-    "node": "16.* || >= 18"
+    "node": ">= 20.x"
   },
   "ember": {
     "edition": "octane"
@@ -111,7 +99,7 @@
     "tracked-built-ins": "^3.3.0"
   },
   "volta": {
-    "node": "18.17.0",
-    "pnpm": "8.14.1"
+    "node": "20.13.1",
+    "pnpm": "9.1.1"
   }
 }
