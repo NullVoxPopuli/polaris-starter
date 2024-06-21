@@ -1,3 +1,6 @@
+# 🎉 We have a blueprint now! Use that instead https://github.com/embroider-build/app-blueprint 🎉
+
+
 [Try it on StackBlitz](https://stackblitz.com/github/nullVoxPopuli/polaris-starter/tree/main?file=README.md)
 
 Variants:
