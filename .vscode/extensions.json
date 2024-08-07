@@ -1,5 +1,13 @@
 {
   "recommendations": [
-    "embertooling.emberjs"
+    // Extension pack containing all the ember things
+    "embertooling.emberjs",
+    // Preview of the template-based type-checking (Glint)
+    "typed-ember.glint-vscode",
+  ],
+  "unwantedRecommendations": [
+    // Ember Tooling has better versions of these
+    "chiragpat.vscode-glimmer",
+    "lifeart.vscode-ember-unstable"
   ]
 }
