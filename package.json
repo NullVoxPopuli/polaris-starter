@@ -93,6 +93,7 @@
     "edition": "octane"
   },
   "dependencies": {
+    "decorator-transforms": "^2.0.0",
     "ember-modifier": "^4.2.0",
     "ember-resources": "^7.0.2",
     "ember-route-template": "^1.0.3",

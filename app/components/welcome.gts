@@ -1,4 +1,6 @@
 import { Clock } from './clock';
+// class-based component here
+import { Counter } from './counter';
 import { Excite } from './excite';
 
 const Welcome = <template>
@@ -9,6 +11,7 @@ const Welcome = <template>
       <aside>The time is <span>{{Clock}}</span></aside>
     </div>
 
+    <Counter />
     <Links />
 
     <Footer />
