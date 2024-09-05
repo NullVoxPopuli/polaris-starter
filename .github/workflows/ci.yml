@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - webpack
       - master
   pull_request: {}
 
