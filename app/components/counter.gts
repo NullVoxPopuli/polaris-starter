@@ -11,7 +11,7 @@ export class Counter extends Component {
   <template>
     <p>The count is {{this.count}}</p>
 
-    <button {{on "click" this.increment}}>increment</button>
-    <button {{on "click" this.decrement}}>decrement</button>
+    <button type="button" {{on "click" this.increment}}>increment</button>
+    <button type="button" {{on "click" this.decrement}}>decrement</button>
   </template>
 }
