@@ -11,6 +11,7 @@
     "test": "tests"
   },
   "scripts": {
+    "build": "pnpm build:production",
     "build:production": "ember build --environment=production",
     "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\"",
     "lint:css": "stylelint \"**/*.css\"",
