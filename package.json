@@ -85,7 +85,7 @@
     "typescript": "^5.5.4",
     "webpack": "^5.94.0"
   },
-  "packageManager": "pnpm@9.1.1",
+  "packageManager": "pnpm@9.9.0",
   "engines": {
     "node": ">= 20.x"
   },
@@ -102,6 +102,6 @@
   },
   "volta": {
     "node": "20.16.0",
-    "pnpm": "9.7.0"
+    "pnpm": "9.9.0"
   }
 }
