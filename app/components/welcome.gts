@@ -45,7 +45,7 @@ const Links = <template>
       <span>Additional template helpers (coming soon to Ember.js)</span>
     </li>
     <li>
-      <a href="https://typescript.org">TypeScript</a>
+      <a href="https://www.typescriptlang.org/">TypeScript</a>
       <span>TypeScript always enabled, always optional</span>
     </li>
     <li>
