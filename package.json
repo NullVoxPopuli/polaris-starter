@@ -43,7 +43,7 @@
     "@glint/environment-ember-template-imports": "^1.5.2",
     "@glint/template": "^1.5.2",
     "@rollup/plugin-babel": "^6.0.4",
-    "@tsconfig/ember": "^3.0.10",
+    "@ember/app-tsconfig": "^1.0.0",
     "@types/qunit": "^2.19.12",
     "@types/rsvp": "^4.0.9",
     "babel-plugin-ember-template-compilation": "^2.3.0",

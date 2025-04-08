@@ -5,6 +5,12 @@ Quick Links:
 - [template repo](https://github.com/embroider-build/app-blueprint) for apps: `npx ember-cli new my-app --blueprint @embroider/app-blueprint`
 - [template repo](https://github.com/ember-cli/ember-addon-blueprint/) for libraries: `npx ember-cli addon my-library --blueprint @ember/addon-blueprint`
 
+
+Variants:
+
+- [Vite, TS](https://github.com/NullVoxPopuli/polaris-starter/tree/main) 👈 This branch 
+- [Vite, JS](https://github.com/NullVoxPopuli/polaris-starter/tree/vite-javascript)
+
 # polaris-starter
 
 The goal of this project is to be a quick way to get started with _Polaris_, the next edition of Ember.

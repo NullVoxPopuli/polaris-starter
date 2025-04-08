@@ -39,6 +39,9 @@ importers:
       '@babel/plugin-transform-runtime':
         specifier: ^7.26.9
         version: 7.26.10(@babel/core@7.26.10)
+      '@ember/app-tsconfig':
+        specifier: ^1.0.0
+        version: 1.0.1
       '@ember/optional-features':
         specifier: ^2.2.0
         version: 2.2.0
@@ -81,9 +84,6 @@ importers:
       '@rollup/plugin-babel':
         specifier: ^6.0.4
         version: 6.0.4(@babel/core@7.26.10)(rollup@4.39.0)
-      '@tsconfig/ember':
-        specifier: ^3.0.10
-        version: 3.0.10
       '@types/qunit':
         specifier: ^2.19.12
         version: 2.19.12
@@ -1268,6 +1268,9 @@ packages:
   '@ember-data/rfc395-data@0.0.4':
     resolution: {integrity: sha512-tGRdvgC9/QMQSuSuJV45xoyhI0Pzjm7A9o/MVVA3HakXIImJbbzx/k/6dO9CUEQXIyS2y0fW6C1XaYOG7rY0FQ==}
 
+  '@ember/app-tsconfig@1.0.1':
+    resolution: {integrity: sha512-mScH7mHllA+X8iyTP2XU0KdTeT6Cvo+Dw/ODHWeUUmjkRVt2B5F25rA7rYV5rxXsmp50Ljs0I3eC6/dZses/LA==}
+
   '@ember/edition-utils@1.2.0':
     resolution: {integrity: sha512-VmVq/8saCaPdesQmftPqbFtxJWrzxNGSQ+e8x8LLe3Hjm36pJ04Q8LeORGZkAeOhldoUX9seLGmSaHeXkIqoog==}
 
@@ -1915,9 +1918,6 @@ packages:
 
   '@socket.io/component-emitter@3.1.2':
     resolution: {integrity: sha512-9BCxFwvbGg/RsZK9tjXd8s4UcwR0MWeFQ1XEKIQVVvAGJyINdrqKMcTRyLoK8Rse1GjzLV9cwjWV1olXRWEXVA==}
-
-  '@tsconfig/ember@3.0.10':
-    resolution: {integrity: sha512-qFIlJIMsn25frlp2WOtX/OxNxfsYeqM7OdSXB88vgvRqU9ElV3KpQc2EhmchoKpHoKB3oiLPIJNRuf5xcxjamw==}
 
   '@types/babel__code-frame@7.0.6':
     resolution: {integrity: sha512-Anitqkl3+KrzcW2k77lRlg/GfLZLWXBuNgbEcIOU6M92yw42vsd3xV/Z/yAHEj8m+KUjL6bWOVOFqX8PFPJ4LA==}
@@ -8052,6 +8052,8 @@ snapshots:
 
   '@ember-data/rfc395-data@0.0.4': {}
 
+  '@ember/app-tsconfig@1.0.1': {}
+
   '@ember/edition-utils@1.2.0': {}
 
   '@ember/optional-features@2.2.0':
@@ -8836,8 +8838,6 @@ snapshots:
   '@sindresorhus/merge-streams@2.3.0': {}
 
   '@socket.io/component-emitter@3.1.2': {}
-
-  '@tsconfig/ember@3.0.10': {}
 
   '@types/babel__code-frame@7.0.6': {}
 
