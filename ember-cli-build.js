@@ -14,12 +14,6 @@ module.exports = async function (defaults) {
       // (for this to work when using Embroider you need https://github.com/embroider-build/embroider/pull/1673)
       disableDecoratorTransforms: true,
     },
-    babel: {
-      plugins: [
-        // add the new transform.
-        require.resolve('decorator-transforms'),
-      ],
-    },
   });
 
   return compatBuild(app, buildOnce);

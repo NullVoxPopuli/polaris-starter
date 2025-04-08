@@ -102,15 +102,6 @@ importers:
       ember-cli:
         specifier: ~6.3.1
         version: 6.3.1(handlebars@4.7.8)(underscore@1.13.7)
-      ember-cli-babel:
-        specifier: ^8.2.0
-        version: 8.2.0(@babel/core@7.26.10)
-      ember-cli-htmlbars:
-        specifier: ^6.3.0
-        version: 6.3.0
-      ember-load-initializers:
-        specifier: ^3.0.0
-        version: 3.0.1(ember-source@6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.99.2))
       ember-page-title:
         specifier: ^9.0.1
         version: 9.0.1(ember-source@6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.99.2))
@@ -3376,12 +3367,6 @@ packages:
     engines: {node: '>= 14.0.0'}
     peerDependencies:
       ember-source: ^3.25.0 || >=4.0.0
-
-  ember-load-initializers@3.0.1:
-    resolution: {integrity: sha512-qV3vxJKw5+7TVDdtdLPy8PhVsh58MlK8jwzqh5xeOwJPNP7o0+BlhvwoIlLYTPzGaHdfjEIFCgVSyMRGd74E1g==}
-    engines: {node: '>= 18.*'}
-    peerDependencies:
-      ember-source: '>= 5'
 
   ember-modifier@4.2.0:
     resolution: {integrity: sha512-BJ48eTEGxD8J7+lofwVmee7xDgNDgpr5dd6+MSu4gk+I6xb35099RMNorXY5hjjwMJEyi/IRR6Yn3M7iJMz8Zw==}
@@ -10485,11 +10470,12 @@ snapshots:
       hash-for-dep: 1.5.1
       heimdalljs-logger: 0.1.10
       js-string-escape: 1.0.1
-      semver: 7.6.3
+      semver: 7.7.1
       silent-error: 1.1.1
       walk-sync: 2.2.0
     transitivePeerDependencies:
       - supports-color
+    optional: true
 
   ember-cli-is-package-missing@1.0.0: {}
 
@@ -10740,10 +10726,6 @@ snapshots:
       ember-source: 6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.99.2)
     transitivePeerDependencies:
       - supports-color
-
-  ember-load-initializers@3.0.1(ember-source@6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.99.2)):
-    dependencies:
-      ember-source: 6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.99.2)
 
   ember-modifier@4.2.0(@babel/core@7.26.10)(ember-source@6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.99.2)):
     dependencies:

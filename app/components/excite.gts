@@ -1,7 +1,7 @@
 import { modifier } from 'ember-modifier';
 
 const intensify = modifier((element) => {
-  let animation = element.animate(
+  const animation = element.animate(
     [
       { transform: 'translateX(1px)' },
       { transform: 'translateY(1px)' },
