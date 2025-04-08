@@ -23,7 +23,7 @@
     "lint:prettier:fix": "prettier . --write",
     "lint:types": "glint",
     "start": "vite",
-    "test:ember": "vite build --mode test && ember test --path dist"
+    "test:ember": "NODE_ENV=development vite build --mode test && ember test --path dist --config-file ./testem.cjs"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
