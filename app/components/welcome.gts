@@ -49,10 +49,6 @@ const Links = <template>
       <span>Learn about the new reactivity primitive</span>
     </li>
     <li>
-      <a href="https://github.com/jmurphyau/ember-truth-helpers">ember-truth-helpers</a>
-      <span>Additional template helpers (coming soon to Ember.js)</span>
-    </li>
-    <li>
       <a href="https://typescript.org">TypeScript</a>
       <span>TypeScript always enabled, always optional</span>
     </li>
