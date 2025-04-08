@@ -21,6 +21,7 @@
     "lint:js:fix": "eslint . --fix",
     "lint:prettier": "prettier . --check",
     "lint:prettier:fix": "prettier . --write",
+    "lint:types": "glint",
     "start": "vite",
     "test:ember": "vite build --mode test && ember test --path dist",
     "lint:types": "glint"
@@ -38,10 +39,11 @@
     "@embroider/vite": "^1.0.0-alpha.11",
     "@glimmer/component": "^2.0.0",
     "@glimmer/tracking": "^1.1.2",
-    "@glint/core": "1.5.2",
-    "@glint/environment-ember-loose": "1.5.2",
-    "@glint/environment-ember-template-imports": "^1.5.2",
-    "@glint/template": "^1.5.2",
+    "@glint/core": "1.4.1-unstable.c6fbad4",
+    "@glint/environment-ember-loose": "1.4.1-unstable.c6fbad4",
+    "@glint/environment-ember-template-imports": "1.4.1-unstable.c6fbad4",
+    "@glint/template": "1.4.1-unstable.c6fbad4",
+    "@glint/tsserver-plugin": "1.4.1-unstable.c6fbad4",
     "@rollup/plugin-babel": "^6.0.4",
     "@ember/app-tsconfig": "^1.0.0",
     "@types/qunit": "^2.19.12",
@@ -86,6 +88,11 @@
     "pnpm": "10.7.1"
   },
   "packageManager": "pnpm@10.7.1",
+  "pnpm": {
+    "overrides": {
+      "@glint/template": "1.4.1-unstable.c6fbad4"
+    }
+  },
   "ember-addon": {
     "type": "app",
     "version": 2
