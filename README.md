@@ -8,8 +8,8 @@ Quick Links:
 
 Variants:
 
-- [Vite, TS](https://github.com/NullVoxPopuli/polaris-starter/tree/main) 👈 This branch 
-- [Vite, JS](https://github.com/NullVoxPopuli/polaris-starter/tree/vite-javascript)
+- [Vite, TS](https://github.com/NullVoxPopuli/polaris-starter/tree/main) 
+- [Vite, JS](https://github.com/NullVoxPopuli/polaris-starter/tree/vite-javascript) 👈 This branch 
 
 # polaris-starter
 
