@@ -1,16 +1,11 @@
-[Try it on StackBlitz](https://stackblitz.com/github/nullVoxPopuli/polaris-starter/tree/main?file=README.md)
+[Try it on StackBlitz](https://github.com/NullVoxPopuli/polaris-starter/tree/main)
 
-Variants:
-
-- [Vite](https://github.com/NullVoxPopuli/polaris-starter/tree/main)
-- [Webpack](https://github.com/NullVoxPopuli/polaris-starter/tree/webpack) 👈 This branch
+Quick Links:
+- [ embroider ](https://github.com/embroider-build/embroider/)
+- [template repo](https://github.com/embroider-build/app-blueprint) for apps: `npx ember-cli new my-app --blueprint @embroider/app-blueprint`
+- [template repo](https://github.com/ember-cli/ember-addon-blueprint/) for libraries: `npx ember-cli addon my-library --blueprint @ember/addon-blueprint`
 
 # polaris-starter
-
-Variants:
-- [Vite](https://github.com/NullVoxPopuli/polaris-starter/tree/main) 
-- [Webpack](https://github.com/NullVoxPopuli/polaris-starter/tree/webpack) 👈 This branch  
-
 
 The goal of this project is to be a quick way to get started with _Polaris_, the next edition of Ember.
 

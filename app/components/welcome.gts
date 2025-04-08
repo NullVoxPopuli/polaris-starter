@@ -35,6 +35,11 @@ const Header = <template>
 const Links = <template>
   <ul>
     <li>
+      <a href="https://component-party.dev/compare/emberPolaris-vs-react">Compare with other
+        frameworks</a>
+      <span>@ ComponentParty, you can compare Ember Polaris against React, Svelte, etc</span>
+    </li>
+    <li>
       <a href="https://tutorial.glimdown.com">Tutorial</a>
       <span>Get familiar with Ember's new file format, programming patterns, paradigms, and new way
         of thinking about reactivity</span>
@@ -62,13 +67,6 @@ const Links = <template>
         StackBlitz
       </a>
       <span> Try it on StackBlitz</span>
-    </li>
-
-    <li>
-      <a href="https://stackblitz.com/github/nullVoxPopuli/polaris-starter/tree/monorepo">
-        StackBlitz (mono-repo)
-      </a>
-      <span> Try the mono-repo version on StackBlitz</span>
     </li>
 
     <li>
