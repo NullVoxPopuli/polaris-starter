@@ -1,7 +1,7 @@
 > [!NOTE]
 > ember-cli 6.8 ships with vite out of the box, so this repo is not needed anymore
 
-
+---------------------------
 
 [Try it on StackBlitz](https://github.com/NullVoxPopuli/polaris-starter/tree/main)
 
